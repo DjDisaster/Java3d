@@ -32,8 +32,6 @@ public class Main {
         frame.setBackground(Color.BLACK);
         frame.setUndecorated(true);
 
-        Matrix cubeMatrix = new CubeMatrix(-0.5,-0.5,-0.5, 0.25);
-        Matrix cubeMatrix2 = new CubeMatrix(0.5,0.5,0.5, 0.25);
         drawPanel = new DrawPanel(new Matrix[]{
                 new CubeMatrix(-0.5,0.5,-0.5, 0.25),
                 new CubeMatrix(0.5,0.5,0.5, 0.25),
