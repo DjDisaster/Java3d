@@ -1,18 +1,14 @@
 package me.djdisaster;
 
 import me.djdisaster.matrix.CubeMatrix;
-import me.djdisaster.matrix.FishMatrix;
+import me.djdisaster.matrix.HexPrismMatrix;
 import me.djdisaster.matrix.Matrix;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.time.Duration;
 import java.util.ArrayList;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class Main {
 
@@ -33,6 +29,7 @@ public class Main {
         frame.setUndecorated(true);
 
         drawPanel = new DrawPanel(new Matrix[]{
+                /*
                 new CubeMatrix(-0.5,0.5,-0.5, 0.25),
                 new CubeMatrix(0.5,0.5,0.5, 0.25),
                 new CubeMatrix(-0.5,0.5,0.5, 0.25),
@@ -41,7 +38,9 @@ public class Main {
                 new CubeMatrix(0.5,-0.5,0.5, 0.25),
                 new CubeMatrix(-0.5,-0.5,0.5, 0.25),
                 new CubeMatrix(0.5,-0.5,-0.5, 0.25),
-                new CubeMatrix(-0.25,-0.25,-0.25, 0.75),
+
+                 */
+                new HexPrismMatrix(-0.5,-0.5,-0.5, 0.75),
 
         });
 

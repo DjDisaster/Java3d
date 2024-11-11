@@ -111,6 +111,7 @@ public class DrawPanel extends JPanel {
                 (int)Math.floor(Math.random() * 255),
                 (int)Math.floor(Math.random() * 255)
         );
+        //c = Color.white;
         g.setColor(c);
         g.fillPolygon(triangle);
         if (Main.showWireframe) {
